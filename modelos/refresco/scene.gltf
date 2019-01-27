@@ -3,50 +3,50 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 1351,
+      "count": 331,
       "max": [
-        0.99984645843505859,
-        0.99984645843505859,
-        3.728034496307373
+        51.1519775390625,
+        51.145992279052734,
+        141.34295654296875
       ],
       "min": [
-        -0.99984645843505859,
-        -0.99984645843505859,
-        0.0045131444931030273
+        -51.151988983154297,
+        -51.145992279052734,
+        5.2748661041259766
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 16212,
+      "byteOffset": 3972,
       "componentType": 5126,
-      "count": 1351,
+      "count": 331,
       "max": [
-        0.99858587980270386,
-        0.99858587980270386,
-        0.99640935659408569
+        1,
+        1,
+        0.43385812640190125
       ],
       "min": [
-        -0.99858587980270386,
-        -0.99858587980270386,
-        -0.99986588954925537
+        -1,
+        -1,
+        -0.028410619124770164
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 3,
       "componentType": 5126,
-      "count": 1351,
+      "count": 331,
       "max": [
-        0.99999809265136719,
-        0.99729841947555542,
-        0.98954218626022339,
+        1,
+        1,
+        0.034437693655490875,
         1
       ],
       "min": [
-        -0.99895769357681274,
-        -0.9995693564414978,
-        -0.99858564138412476,
+        -1,
+        -1,
+        -0.034437663853168488,
         1
       ],
       "type": "VEC4"
@@ -54,23 +54,104 @@
     {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 1351,
+      "count": 331,
       "max": [
-        0.97690236568450928,
-        0.99983066320419312
+        1.0002069473266602,
+        1.0007171630859375
       ],
       "min": [
-        0.00016938427870627493,
-        0.00016938427870627493
+        -0.003070533275604248,
+        0.00050001847557723522
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 7092,
+      "count": 1512,
       "max": [
-        1350
+        330
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 7944,
+      "componentType": 5126,
+      "count": 2944,
+      "max": [
+        51.090709686279297,
+        51.084732055664062,
+        144.61628723144531
+      ],
+      "min": [
+        -51.090721130371094,
+        -51.084732055664062,
+        -6.0521678924560547
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 43272,
+      "componentType": 5126,
+      "count": 2944,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 5296,
+      "componentType": 5126,
+      "count": 2944,
+      "max": [
+        1,
+        1,
+        0.99104523658752441,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -0.99833333492279053,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2648,
+      "componentType": 5126,
+      "count": 2944,
+      "max": [
+        1,
+        1.0167226791381836
+      ],
+      "min": [
+        -0.09903264045715332,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 6048,
+      "componentType": 5125,
+      "count": 8832,
+      "max": [
+        2943
       ],
       "min": [
         0
@@ -80,42 +161,42 @@
   ],
   "asset": {
     "extras": {
-      "author": "ethanchene (https://sketchfab.com/ethanchene)",
+      "author": "Anthony Yanez (https://sketchfab.com/paulyanez)",
       "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/models/6c9596a6f5d0447aa7221d0bac6c1293",
-      "title": "Coke Can"
+      "source": "https://sketchfab.com/models/76262ad4b5544dc9bec5d715001c8ded",
+      "title": "Pepsi Can"
     },
-    "generator": "Sketchfab-3.27.1",
+    "generator": "Sketchfab-3.53.2",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 28368,
+      "byteLength": 41376,
       "byteOffset": 0,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 10808,
-      "byteOffset": 28368,
+      "byteLength": 26200,
+      "byteOffset": 41376,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 32424,
-      "byteOffset": 39176,
+      "byteLength": 78600,
+      "byteOffset": 67576,
       "byteStride": 12,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 21616,
-      "byteOffset": 71600,
+      "byteLength": 52400,
+      "byteOffset": 146176,
       "byteStride": 16,
       "name": "floatBufferViews",
       "target": 34962
@@ -123,32 +204,29 @@
   ],
   "buffers": [
     {
-      "byteLength": 93216,
+      "byteLength": 198576,
       "uri": "scene.bin"
     }
   ],
   "images": [
     {
-      "uri": "textures/material_baseColor.png"
+      "uri": "textures/01_-_Default_normal.png"
     },
     {
-      "uri": "textures/material_normal.png"
-    },
-    {
-      "uri": "textures/material_metallicRoughness.png"
+      "uri": "textures/01_-_Default_baseColor.png"
     }
   ],
   "materials": [
     {
-      "doubleSided": false,
+      "doubleSided": true,
       "emissiveFactor": [
         0,
         0,
         0
       ],
-      "name": "material",
+      "name": "01_-_Default",
       "normalTexture": {
-        "index": 1,
+        "index": 0,
         "scale": 1,
         "texCoord": 0
       },
@@ -160,21 +238,36 @@
           1
         ],
         "baseColorTexture": {
-          "index": 0,
+          "index": 1,
           "texCoord": 0
         },
         "metallicFactor": 1,
-        "metallicRoughnessTexture": {
-          "index": 2,
-          "texCoord": 0
-        },
-        "roughnessFactor": 1
+        "roughnessFactor": 0.5
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "02_-_Default",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.58823499999999995,
+          0.58823499999999995,
+          0.58823499999999995,
+          1
+        ],
+        "metallicFactor": 0.62366615849999996,
+        "roughnessFactor": 0
       }
     }
   ],
   "meshes": [
     {
-      "name": "Can_Can_0",
+      "name": "Can_01 - Default_0",
       "primitives": [
         {
           "attributes": {
@@ -185,6 +278,22 @@
           },
           "indices": 4,
           "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Can_02 - Default_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 1,
           "mode": 4
         }
       ]
@@ -231,7 +340,7 @@
         0,
         1
       ],
-      "name": "ca3d0e9dc37543c585f46dbef37c321f.fbx"
+      "name": "Pepsi Can.FBX"
     },
     {
       "children": [
@@ -241,31 +350,36 @@
     },
     {
       "children": [
-        5
+        5,
+        6
       ],
       "matrix": [
-        100,
+        0.81871652603149414,
         0,
         0,
         0,
         0,
-        -1.6292067939183141e-05,
-        -99.999999999998678,
+        1.8179158756825723e-16,
+        -0.81871652603149414,
         0,
         0,
-        99.999999999998678,
-        -1.6292067939183141e-05,
+        1,
+        2.2204460492503131e-16,
         0,
+        -0.080751344561576843,
         0,
-        0,
-        0,
+        0.24226430058479309,
         1
       ],
       "name": "Can"
     },
     {
       "mesh": 0,
-      "name": "Can_Can_0"
+      "name": "Can_01 - Default_0"
+    },
+    {
+      "mesh": 1,
+      "name": "Can_02 - Default_0"
     }
   ],
   "samplers": [
@@ -293,10 +407,6 @@
     {
       "sampler": 0,
       "source": 1
-    },
-    {
-      "sampler": 0,
-      "source": 2
     }
   ]
 }
