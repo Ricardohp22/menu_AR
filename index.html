@@ -72,7 +72,19 @@
 
             </a-plane>
 
-            <!--Letras paquetes-->
+            <!--Letras paquetes<a-plane id="diaId" position="0 .035 -.1" width=".024" height=".006"  opacity="0"
+            material="
+            src: images/paqueteLunes.png;
+            ">
+                <a-animation
+                begin="an2"
+                attribute="opacity"
+                dur="3000"
+                to=".9"
+                
+                >
+                </a-animation>
+            </a-plane> -->
             <a-plane id="diaId" position="0 .035 -.1" width=".024" height=".006"  opacity="0"
             material="
             src: images/paqueteLunes.png;
@@ -384,7 +396,7 @@
     var paquete3 = document.getElementById('paquete3Id');
     var wa = document.getElementById("waClickId");
     var maps = document.getElementById("mapsClickId");
-    var dia = document.getElementById("diaId");
+    //var dia = document.getElementById("diaId");
     var wall = document.getElementById("wallId");
     var muro = document.getElementById("muroId");
 
@@ -451,7 +463,7 @@
     verMenu.addEventListener("click",function(e)
     {
         intro.emit("an2");
-        dia.emit("an2");
+        //dia.emit("an2");
         verMenu.setAttribute("position",{x:-1, y:0, z:0});
         flechaD.setAttribute("visible",true);
         flechaI.setAttribute("visible",true);
