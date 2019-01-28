@@ -140,15 +140,15 @@
             <a-marker emitevents="true" cursor="fuse: false; rayOrigin: mouse" type="barcode" value="6">
                 <a-entity rotation="5 45 0">
                 <!--Wall con promo-->
-                <a-entity position="0 0 -.5">
-                    <a-box position="-1.5 0 -1" rotation="0 0 -35" scale="4 .2 2"
-                    material="src: images/wall.jpg;
-                    repeat: 3 1;"></a-box>
-                    <a-entity rotation="0 0 -35" position="0 0 0">
-                        <a-plane position="-1.3 -.5 -1" rotation="-90 0 0" width="4" height="2" opacity=".9"
-                        material="src: images/2x1.png"></a-plane>
+                    <a-entity id="muroId" position="0 0 -.5">
+                        <a-box position="-1.5 0 -1" rotation="0 0 -35" scale="4 .2 2"
+                        material="src: images/wall.jpg;
+                        repeat: 3 1;"></a-box>
+                        <a-entity rotation="0 0 -35" position="0 0 0">
+                            <a-plane id="wallId" position="-1.3 -.5 -1" rotation="-90 0 0" width="4" height="2" opacity=".9"
+                            material="src: images/hyr.png"></a-plane>
+                        </a-entity>
                     </a-entity>
-                </a-entity>
                 
                 
                 
@@ -385,6 +385,8 @@
     var wa = document.getElementById("waClickId");
     var maps = document.getElementById("mapsClickId");
     var dia = document.getElementById("diaId");
+    var wall = document.getElementById("wallId");
+    var muro = document.getElementById("muroId");
 
     function funShowPaquete(num, sentido)
     {
@@ -400,6 +402,7 @@
                     paquete3.emit("saleI");
                 }
                 numeros.setAttribute("material",{src:"images/1.png"});
+                wall.setAttribute("material",{src: "images/hyr.png"});
                 
             break;
             case 2:
@@ -412,6 +415,7 @@
                     paquete1.emit("saleI");
                 }
                 numeros.setAttribute("material",{src:"images/2.png"});
+                wall.setAttribute("material",{src: "images/2x1.png"});
             break;
             case 3:
             if(sentido==0)
@@ -423,6 +427,7 @@
                     paquete2.emit("saleI");
                 }
                 numeros.setAttribute("material",{src:"images/3.png"});
+                wall.setAttribute("material",{src: "images/hyp.png"});
             break;
             default:
             {
@@ -456,6 +461,7 @@
         window.setTimeout(function(e)
         {
             paquete1.emit("entraD");
+            muro.setAttribute("visible", true);
         },1000);
         
     });
