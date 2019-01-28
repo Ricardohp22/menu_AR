@@ -214,7 +214,7 @@
 
                 <!--Paquete #2-->
                 <a-entity id="paquete2Id"  position="6 0 0">
-                        <a-entity gltf-model="#beerModel" position="-.8 1 0" scale=".18 .18 .18" rotation="-90 0 -30"> 
+                        <a-entity gltf-model="#beerModel" position="-.6 1 0" scale=".18 .18 .18" rotation="-90 0 -30"> 
                                 <a-animation
                                 attribute="rotation"
                                 dur="2000"
@@ -224,17 +224,26 @@
                                 repeat="indefinite"
                                 ></a-animation>
                         </a-entity>
-    
-                        <a-entity gltf-model="#beerModel" position=".8 1 0" scale=".18 .18 .18" rotation="-90 0 -30"> 
+                        <a-entity>
+                            <a-entity gltf-model="#beerModel" position=".6 1 0" scale=".18 .18 .18" rotation="-90 0 -30"> 
+                                <a-animation
+                                attribute="rotation"
+                                dur="2000"
+                                to="-90 0 30"
+                                easing="linear"
+                                direction="alternate"
+                                repeat="indefinite"
+                                ></a-animation>
+                            </a-entity>
                             <a-animation
                             attribute="rotation"
-                            dur="2000"
-                            to="-90 0 30"
+                            dur="5000"
+                            to="0 0 360"
                             easing="linear"
-                            direction="alternate"
                             repeat="indefinite"
                             ></a-animation>
                         </a-entity>
+                        
                         
                         <a-animation
                         begin="entraI"
@@ -286,7 +295,7 @@
                         </a-entity>
     
                         <a-entity rotation="-90 0 15" position=".8 1 0">
-                           <a-entity obj-model="obj: #papasModel; mtl: #papasMtl"  scale="6 6 6" rotation="0 0 0"> 
+                           <a-entity obj-model="obj: #papasModel; mtl: #papasMtl"  scale="10 10 10" rotation="0 0 0"> 
                                 <a-animation
                                 attribute="rotation"
                                 dur="4000"
