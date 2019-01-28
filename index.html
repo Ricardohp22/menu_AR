@@ -138,14 +138,18 @@
 
 
             <a-marker emitevents="true" cursor="fuse: false; rayOrigin: mouse" type="barcode" value="6">
-                
-                <a-box position="-1.5 0 -1" rotation="0 0 -35" scale="4 .2 2"
-                material="src: images/wall.jpg;
-                repeat: 3 1;"></a-box>
-                <a-entity rotation="0 0 -35" position="0 0 0">
-                    <a-plane position="-1.3 -.5 -1" rotation="-90 0 0" width="4" height="2" opacity=".9"
-                    material="src: images/2x1.png"></a-plane>
+                <!--Wall con promo-->
+                <a-entity position="0 0 -1">
+                    <a-box position="-1.5 0 -1" rotation="0 0 -35" scale="4 .2 2"
+                    material="src: images/wall.jpg;
+                    repeat: 3 1;"></a-box>
+                    <a-entity rotation="0 0 -35" position="0 0 0">
+                        <a-plane position="-1.3 -.5 -1" rotation="-90 0 0" width="4" height="2" opacity=".9"
+                        material="src: images/2x1.png"></a-plane>
+                    </a-entity>
                 </a-entity>
+                
+                
                 
 
                 <!--Paquete #1-->
