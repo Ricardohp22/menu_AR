@@ -14,7 +14,7 @@
             <a-assets>
                 <a-asset-item id="papasModel" src="modelos/papas/scene.gltf"></a-asset-item>
                 <a-asset-item id="burgerModel" src="modelos/burger/scene.gltf"></a-asset-item>
-                <a-asset-item id="pizzaModel" src="modelos/pizza/scene.gltf"></a-asset-item>
+                <a-asset-item id="beerModel" src="modelos/beer/scene.gltf"></a-asset-item>
                 <a-asset-item id="refrescoModel" src="modelos/refresco/scene.gltf"></a-asset-item>
             </a-assets>
             
@@ -142,7 +142,7 @@
 
                 <!--Paquete #1-->
                 <a-entity id="paquete1Id"  position="6 0 0">
-                    <a-entity gltf-model="#papasModel" position="-.8 1 0" scale="1.5 1.5 1.5" rotation="-90 0 -30"> 
+                    <a-entity gltf-model="#burgerModel" position="-.8 1 0" scale=".015 .015 .015" rotation="-90 0 -30"> 
                             <a-animation
                             attribute="rotation"
                             dur="2000"
@@ -153,9 +153,8 @@
                             ></a-animation>
                     </a-entity>
 
-                    <a-entity rotation="-90 0 15" position=".8 .5 0">
-                       <a-entity gltf-model="#refrescoModel"  scale=".012 .012 .012" rotation="0 0 0"
-                       material="metalness: .2;"> 
+                    <a-entity rotation="-90 0 15" position=".8 1 0">
+                       <a-entity gltf-model="#refrescoModel"  scale=".012 .012 .012" rotation="0 0 0"> 
                             <a-animation
                             attribute="rotation"
                             dur="4000"
@@ -167,7 +166,7 @@
                         </a-entity> 
                         <a-animation
                             attribute="rotation"
-                            dur="2001"
+                            dur="2000"
                             to="-90 0 -15"
                             easing="linear"
                             direction="alternate"
@@ -176,45 +175,45 @@
                     </a-entity>
                     
                     <a-animation
-                        begin="entraI"
-                        attribute="position"
-                        dur="1500"
-                        from="-6 0 0"
-                        to="0 0 0"
-                        easing="linear"
+                    begin="entraI"
+                    attribute="position"
+                    dur="1500"
+                    from="-6 0 0"
+                    to="0 0 0"
+                    easing="linear"
 
-                    ></a-animation>
-                    <a-animation
-                        begin="entraD"
-                        attribute="position"
-                        dur="1500"
-                        from="6 0 0"
-                        to="0 0 0"
-                        easing="linear"
+                ></a-animation>
+                <a-animation
+                    begin="entraD"
+                    attribute="position"
+                    dur="1500"
+                    from="6 0 0"
+                    to="0 0 0"
+                    easing="linear"
 
-                    ></a-animation>
-                    <a-animation
-                        begin="saleI"
-                        attribute="position"
-                        dur="1500"
-                        to="-6 0 0"
-                        easing="linear"
+                ></a-animation>
+                <a-animation
+                    begin="saleI"
+                    attribute="position"
+                    dur="1500"
+                    to="-6 0 0"
+                    easing="linear"
 
-                    ></a-animation>
-                    <a-animation
-                        begin="saleD"
-                        attribute="position"
-                        dur="1500"
-                        to="6 0 0"
-                        easing="linear"
+                ></a-animation>
+                <a-animation
+                    begin="saleD"
+                    attribute="position"
+                    dur="1500"
+                    to="6 0 0"
+                    easing="linear"
 
-                    ></a-animation>
+                ></a-animation>
                 </a-entity>
 
 
                 <!--Paquete #2-->
                 <a-entity id="paquete2Id"  position="6 0 0">
-                        <a-entity gltf-model="#burgerModel" position="-.8 1 0" scale=".015 .015 .015" rotation="-90 0 -30"> 
+                        <a-entity gltf-model="#beerModel" position="-.8 1 0" scale=".15 .15 .15" rotation="-90 0 -30"> 
                                 <a-animation
                                 attribute="rotation"
                                 dur="2000"
@@ -225,8 +224,8 @@
                                 ></a-animation>
                         </a-entity>
     
-                        <a-entity rotation="-90 0 15" position=".8 .5 0">
-                           <a-entity gltf-model="#refrescoModel"  scale=".012 .012 .012" rotation="0 0 0"> 
+                        <a-entity rotation="-90 0 15" position=".8 1 0">
+                           <a-entity gltf-model="#beerModel"  scale=".12 .12 .12" rotation="0 0 0"> 
                                 <a-animation
                                 attribute="rotation"
                                 dur="4000"
@@ -295,7 +294,7 @@
                                 ></a-animation>
                         </a-entity>
     
-                        <a-entity rotation="-90 0 15" position=".8 .5 0">
+                        <a-entity rotation="-90 0 15" position=".8 1 0">
                            <a-entity gltf-model="#papasModel"  scale="1.5 1.5 1.5" rotation="0 0 0"> 
                                 <a-animation
                                 attribute="rotation"
