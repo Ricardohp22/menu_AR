@@ -350,87 +350,7 @@
                         easing="linear"
 
                     ></a-animation>
-                    </a-entity>
-
-                    <!--Paquete #4-->
-                <a-entity id="paquete4Id"  position="6 0 0">
-                        <a-entity rotation="-90 0 -10" position="-.8 .5 0">
-                            <a-entity gltf-model="#pizzaModel"  scale=".8 .8 .8" > 
-                                <a-animation
-                                attribute="rotation"
-                                dur="5000"
-                                to="0 360 0"
-                                easing="linear"
-                                repeat="indefinite"
-                                ></a-animation>
-                            </a-entity>
-                            <a-animation
-                                attribute="rotation"
-                                dur="2000"
-                                to="-90 0 10"
-                                easing="linear"
-                                direction="alternate"
-                                repeat="indefinite"
-                                ></a-animation>
-                        </a-entity>
-                        
-    
-                        <a-entity rotation="-90 0 15" position=".8 .55 -.3">
-                           <a-entity gltf-model="#refrescoModel"  scale=".012 .012 .012" rotation="0 0 0"> 
-                                <a-animation
-                                attribute="rotation"
-                                dur="4000"
-                                to="0 360 0"
-                                easing="linear"
-                                repeat="indefinite"
-                                ></a-animation>
-                                
-                            </a-entity> 
-                            <a-animation
-                                attribute="rotation"
-                                dur="2000"
-                                to="-90 0 -15"
-                                easing="linear"
-                                direction="alternate"
-                                repeat="indefinite"
-                                ></a-animation>
-                        </a-entity>
-                        
-                        <a-animation
-                        begin="entraI"
-                        attribute="position"
-                        dur="1500"
-                        from="-6 0 0"
-                        to="0 0 0"
-                        easing="linear"
-
-                    ></a-animation>
-                    <a-animation
-                        begin="entraD"
-                        attribute="position"
-                        dur="1500"
-                        from="6 0 0"
-                        to="0 0 0"
-                        easing="linear"
-
-                    ></a-animation>
-                    <a-animation
-                        begin="saleI"
-                        attribute="position"
-                        dur="1500"
-                        to="-6 0 0"
-                        easing="linear"
-
-                    ></a-animation>
-                    <a-animation
-                        begin="saleD"
-                        attribute="position"
-                        dur="1500"
-                        to="6 0 0"
-                        easing="linear"
-
-                    ></a-animation>
-                    </a-entity>
+                    </a-entity>               
                 
             </a-marker>
 
@@ -457,7 +377,6 @@
     var paquete1 = document.getElementById('paquete1Id');
     var paquete2 = document.getElementById('paquete2Id');
     var paquete3 = document.getElementById('paquete3Id');
-    var paquete4 = document.getElementById('paquete4Id');
     var wa = document.getElementById("waClickId");
     var maps = document.getElementById("mapsClickId");
     var dia = document.getElementById("diaId");
@@ -500,17 +419,6 @@
                 }
                 numeros.setAttribute("material",{src:"images/3.png"});
             break;
-            case 4:
-            if(sentido==0)
-                {
-                    paquete4.emit("entraI");
-                    paquete1.emit("saleD");
-                }else{
-                    paquete4.emit("entraD");
-                    paquete3.emit("saleI");
-                }
-                numeros.setAttribute("material",{src:"images/4.png"});
-            break;
             default:
             {
                 console.log("opcion no disponible");
@@ -551,7 +459,7 @@
     document.getElementById("flechaDClickId").addEventListener("click",function(e)
     {
         contadorNumPaquete++;
-        if(contadorNumPaquete >= 5)
+        if(contadorNumPaquete >= 4)
         {
             contadorNumPaquete=1;
             
