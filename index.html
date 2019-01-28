@@ -214,7 +214,7 @@
 
                 <!--Paquete #2-->
                 <a-entity id="paquete2Id"  position="6 0 0">
-                        <a-entity gltf-model="#burgerModel" position="-.5 1 0" scale=".015 .015 .015" rotation="-90 0 -30"> 
+                        <a-entity gltf-model="#burgerModel" position="-.8 1 0" scale=".015 .015 .015" rotation="-90 0 -30"> 
                                 <a-animation
                                 attribute="rotation"
                                 dur="2000"
@@ -225,7 +225,7 @@
                                 ></a-animation>
                         </a-entity>
     
-                        <a-entity rotation="-90 0 15" position=".7 .5 0">
+                        <a-entity rotation="-90 0 15" position=".8 .5 0">
                            <a-entity gltf-model="#refrescoModel"  scale=".012 .012 .012" rotation="0 0 0"> 
                                 <a-animation
                                 attribute="rotation"
@@ -284,7 +284,7 @@
 
                     <!--Paquete #3-->
                 <a-entity id="paquete3Id"  position="6 0 0">
-                        <a-entity gltf-model="#burgerModel" position="-.8 1 0" scale=".015 .015 .015" rotation="-90 0 -30"> 
+                        <a-entity gltf-model="#burgerModel" position="-1 1 0" scale=".015 .015 .015" rotation="-90 0 -30"> 
                                 <a-animation
                                 attribute="rotation"
                                 dur="2000"
@@ -392,7 +392,7 @@
                     paquete2.emit("saleD");
                 }else{
                     paquete1.emit("entraD");
-                    paquete4.emit("saleI");
+                    paquete3.emit("saleI");
                 }
                 numeros.setAttribute("material",{src:"images/1.png"});
                 
@@ -412,7 +412,7 @@
             if(sentido==0)
                 {
                     paquete3.emit("entraI");
-                    paquete4.emit("saleD");
+                    paquete1.emit("saleD");
                 }else{
                     paquete3.emit("entraD");
                     paquete2.emit("saleI");
@@ -473,7 +473,7 @@
         contadorNumPaquete--;
         if(contadorNumPaquete <= 0)
         {
-            contadorNumPaquete=4;
+            contadorNumPaquete=3;
            
         }
         funShowPaquete(contadorNumPaquete,0);
