@@ -227,7 +227,7 @@
 
                 <!--Paquete #2-->
                 <a-entity id="paquete2Id"  position="6 0 0">
-                        <a-entity gltf-model="#beerModel" position="0 0 0" scale=".18 .18 .18" rotation="-90 0 -30"> 
+                        <a-entity gltf-model="#beerModel" position=".6 1 -1" scale=".18 .18 .18" rotation="-90 0 -30"> 
                                 <a-animation
                                 attribute="rotation"
                                 dur="2000"
@@ -237,8 +237,7 @@
                                 repeat="indefinite"
                                 ></a-animation>
                         </a-entity>
-                        <a-entity position=".6 1 -1">
-                            <a-entity gltf-model="#beerModel"  scale=".18 .18 .18" rotation="-90 0 -30"> 
+                        <a-entity gltf-model="#beerModel" position="-.6 1 -1" scale=".18 .18 .18" rotation="-90 0 -30"> 
                                 <a-animation
                                 attribute="rotation"
                                 dur="2000"
@@ -247,14 +246,7 @@
                                 direction="alternate"
                                 repeat="indefinite"
                                 ></a-animation>
-                            </a-entity>
-                            <a-animation
-                            attribute="rotation"
-                            dur="5000"
-                            to="0 0 360"
-                            easing="linear"
-                            repeat="indefinite"
-                            ></a-animation>
+                        </a-entity>
                         </a-entity>
                         
                         
