@@ -479,17 +479,27 @@
         console.log(contadorNumPaquete);
     });
 
-    //click en contacto
+    //click en maps
     maps.addEventListener("click",function(e)
     {
         console.log("click en wa");
        window.open("https://goo.gl/maps/zeeC98icyvF2"); 
     });
-    
+    //click en wa
     wa.addEventListener("click",function(e)
     {
         console.log("click en maps");
-       window.open("https://api.whatsapp.com/send?phone=+5215584151591&text=Buen%20dia!%20me%20interesa%20el%20paquete%201"); 
+        if(contadorNumPaquete == 1)
+        {
+            window.open("https://api.whatsapp.com/send?phone=+5215584151591&text=Buen%20dia!%20se%20me%20antoja%20el%20paquete%201");
+        }else if(contadorNumPaquete == 2)
+        {
+            window.open("https://api.whatsapp.com/send?phone=+5215584151591&text=Buen%20dia!%20se%20me%20antoja%20el%20paquete%202");
+        }else if(contadorNumPaquete == 3)
+        {
+            window.open("https://api.whatsapp.com/send?phone=+5215584151591&text=Buen%20dia!%20se%20me%20antoja%20el%20paquete%203");
+        }
+        
     });
 
 
