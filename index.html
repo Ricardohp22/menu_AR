@@ -35,7 +35,7 @@
 
             <!--Etiqueta de menú-->
             <a-plane id="verMenuId" position="0 -.02 -.1" width=".025" height=".006" opacity=".7" visible="false"
-            material="src: images/ver_menu.png">
+            material="src: images/ver_menu0.png">
             <a-animation
             begin="an1"
             attribute="opacity"
@@ -453,6 +453,42 @@
     intro.addEventListener('animationend', function (e) {
         if(contadorAnIntro == 0)
         {
+            var fecha = new Date();
+            var dia = fecha.getDay();
+            console.log(dia);
+            switch (dia)
+            {
+                case 0:
+                {
+                    verMenu.setAttribute("Material",{src: "images/ver_menu0.png"});
+                }break;
+                case 1:
+                {
+                    verMenu.setAttribute("Material",{src: "images/ver_menu1.png"});
+                }break;
+                case 2:
+                {
+                    verMenu.setAttribute("Material",{src: "images/ver_menu2.png"});
+                }break;
+                case 3:
+                {
+                    verMenu.setAttribute("Material",{src: "images/ver_menu3.png"});
+                }break;
+                case 4:
+                {
+                    verMenu.setAttribute("Material",{src: "images/ver_menu4.png"});
+                }break;
+                case 5:
+                {
+                    verMenu.setAttribute("Material",{src: "images/ver_menu5.png"});
+                }break;
+                case 6:
+                {
+                    verMenu.setAttribute("Material",{src: "images/ver_menu6.png"});
+                }break;
+            }
+
+            
             console.log("evento 1");
             verMenu.emit("an1");
             verMenu.setAttribute("visible", true);
@@ -463,9 +499,7 @@
     //Clic inicio----------------->
     verMenu.addEventListener("click",function(e)
     {
-        var fecha = new Date();
-        var dia = fecha.getDay();
-        console.log(dia);
+        
 
         intro.emit("an2");
         //dia.emit("an2");
