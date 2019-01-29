@@ -384,9 +384,7 @@
 
     var contadorAnIntro = 0;
     var contadorNumPaquete=1;
-    var fecha = new Date();
-    var f = fecha.getDate();
-    console.log("esta es la fecha" + f);
+    
     
 
     var intro = document.getElementById('introId');
@@ -465,6 +463,10 @@
     //Clic inicio----------------->
     verMenu.addEventListener("click",function(e)
     {
+        var fecha = new Date();
+        var f = fecha.getDate();
+        console.log("esta es la fecha" + f);
+
         intro.emit("an2");
         //dia.emit("an2");
         verMenu.setAttribute("position",{x:-1, y:0, z:0});
