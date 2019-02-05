@@ -148,12 +148,13 @@
             </a-box>
             <a-plane id="waClickId" position="0.031 -0.035 -.1" width=".06" height=".02" opacity="0"
             ></a-plane>
-            
+             <!--Luces------------->
+            <a-entity light="type: ambient; color: #BBB"></a-entity>
+            <a-entity light="type: directional; color: #FFF; intensity: .6" position="-0.5 1 1"></a-entity>
 
             <a-marker emitevents="true" cursor="fuse: false; rayOrigin: mouse" type="pattern" url="qr_rest.patt">
-                <!--Luces------------->
-                <a-entity light="type: ambient; color: #BBB"></a-entity>
-                <a-entity light="type: directional; color: #FFF; intensity: 1" position="-0.5 1 1"></a-entity>
+               
+                
 
                 <a-entity rotation="0 0 0" scale=".5 .5 .5">
                 <!--Wall con promo-->
